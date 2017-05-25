@@ -14,8 +14,8 @@ import sys
 
 #--- Global --------------------------------------------------------------------
 
-class ParseXMLResource(object):
 
+class ParseXMLResource(object):
     def __init__(self):
         self.ret = []
         self.error = ''
@@ -38,14 +38,14 @@ class ParseXMLResource(object):
         dom = self.getDOM(file)
         if dom:
             for vst in dom.getElementsByTagName("vst"):
-                if vst.firstChild.nodeType == vst.TEXT_NODE: # is TEXT_NODE?
+                if vst.firstChild.nodeType == vst.TEXT_NODE:  # is TEXT_NODE?
                     self.ret += [str(vst.firstChild.nodeValue.strip())]
             if self.ret:
                 return self.ret
             else:
                 self.error = "I found NO vst nodes!"
         #else:
-            #return self.error
+        #return self.error
 
     def getText(self, nodelist):
         rc = ""
@@ -79,18 +79,19 @@ Liefert eine Liste mit den Schwierigkeitsgraden.
         else:
             print "hoo? - getDifficultyLevels"
 
-
         return self.level_d
 
     def insertInLevelArray(self, level):
         """
 Fuegt die von self.getDifficultyLevels() generierte Liste in self.level_d ein.
         """
-        self.level_d[str(level[0])] = [str(level[1]),
-                                       self.parseListe(list(level[2])),
-                                       self.parseListe(list(level[3])),
-                                       self.parseListe(list(level[4])),
-                                       self.parseListe(list(level[5]))]
+        self.level_d[str(level[0])] = [
+            str(level[1]),
+            self.parseListe(list(level[2])),
+            self.parseListe(list(level[3])),
+            self.parseListe(list(level[4])),
+            self.parseListe(list(level[5]))
+        ]
 
     def parseListe(self, liste):
         """
@@ -100,7 +101,6 @@ Wandelt eine Liste von Numerischen-Strings in eine Liste von Integer um.
         for i in liste:
             out += [int(i)]
         return out
-
 
 
 #--- Main ----------------------------------------------------------------------

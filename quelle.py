@@ -12,13 +12,17 @@ VERSION = 'ALPHA 0.3.4'
 NAME = 'Griechisch'
 VERBALSTOCK_FILE = "resource.xml"
 
-solve_modus   = ['Indikativ', 'Konjunktiv', 'Optativ', 'Imperativ']
-solve_tempora = ['Praesens', 'Impf.', 'Futur', 'Aorist', 'Pefekt',
-                 'Plusquamperfekt', 'Futurum perfecti']
-solve_person  = ['1. Per. Sg.', '2. Per. Sg.', '3. Per. Sg.',
-                 '1. Per. Pl.', '2. Per. Pl.', '3. Per. Pl.']
-solve_genus   = ['Aktiv', 'Medium / Passiv', 'Passiv']
-solve_genusWeb= ['Aktiv', 'Medium', 'Passiv']
+solve_modus = ['Indikativ', 'Konjunktiv', 'Optativ', 'Imperativ']
+solve_tempora = [
+    'Praesens', 'Impf.', 'Futur', 'Aorist', 'Pefekt', 'Plusquamperfekt',
+    'Futurum perfecti'
+]
+solve_person = [
+    '1. Per. Sg.', '2. Per. Sg.', '3. Per. Sg.', '1. Per. Pl.', '2. Per. Pl.',
+    '3. Per. Pl.'
+]
+solve_genus = ['Aktiv', 'Medium / Passiv', 'Passiv']
+solve_genusWeb = ['Aktiv', 'Medium', 'Passiv']
 endungen =[
          [ # Indikativ
           [ # Praesens
@@ -112,8 +116,8 @@ endungen =[
          ],
         ]
 
-tempuszeichen = ['s', 'J', 'k', 'oi'] # Anmerkung [2]
-augmente = ['e', 'pe', 'epe']   # Anmerkung [3]
+tempuszeichen = ['s', 'J', 'k', 'oi']  # Anmerkung [2]
+augmente = ['e', 'pe', 'epe']  # Anmerkung [3]
 
 #===============================================================================
 #     E X P O R T
@@ -164,7 +168,8 @@ htmlbody = """<body>
 </html>
 """
 
-discr = "Folgende Endungen werden momentan vom Programm (Version: %s) verwendet." % (VERSION)
+discr = "Folgende Endungen werden momentan vom Programm (Version: %s) verwendet." % (
+    VERSION)
 
 htmltable = """    <table>
     <thead>
@@ -184,4 +189,3 @@ htmltable = """    <table>
         </tbody>
     </table>
 """
-
