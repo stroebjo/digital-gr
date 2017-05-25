@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<griechisch>
+
+  <verbalstoecke>
+	<vst>paideuw</vst>
+	<vst>tima</vst>
+	<vst>luw</vst>
+	<vst>poie</vst>
+	<vst>doulo</vst>
+  </verbalstoecke>
+
+  <difficultylevels>
+	<level>
+	  <name>Easy</name>
+	  <discr>Sehr leicht, es werd nur Indikativ Aktiv Praesens, Imperfekt, Futur und Aorist abgefragt.</discr>
+	  <modus>0</modus>
+	  <tempora>0123</tempora>
+	  <genus>0</genus>
+	  <person>012345</person>
+	</level>
+ 	<level>
+	  <name>Medium</name>
+	  <discr>Es werden Indikativ, Konjunktiv und Optativ im Praesens, Imperfekt, Futur, Aorist und Perfekt abgefragt.</discr>
+	  <modus>012</modus>
+	  <tempora>01234</tempora>
+	  <genus>01</genus>
+	  <person>012345</person>
+	</level>
+	<level>
+	  <name>Hard</name>
+	  <discr>Es wird alles abgefragt was geht!</discr>
+	  <modus>0123</modus>
+	  <tempora>013456</tempora>
+	  <genus>01</genus>
+	  <person>012345</person>
+	</level>
+  </difficultylevels>
+
+</griechisch>
