@@ -17,7 +17,7 @@ I appreciate any feedback, but please understand that I can't give any advice on
 
 ## Installation
 
-For representation of the Greek letters you need eiter [Symbol](https://en.wikipedia.org/wiki/Symbol_(typeface) or Griech2 type-face (can be switched in the settings)
+For representation of the Greek letters you need eiter [Symbol](https://en.wikipedia.org/wiki/Symbol_(typeface)) or Griech2 type-face (can be switched in the settings)
 
 You can either run the installer (Windows) or run it form source:
 
