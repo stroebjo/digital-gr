@@ -19,7 +19,7 @@ I appreciate any feedback, but please understand that I can't give any advice on
 
 For representation of the Greek letters you need eiter [Symbol](https://en.wikipedia.org/wiki/Symbol_(typeface)) or Griech2 type-face (can be switched in the settings)
 
-You can either run the installer (Windows) or run it form source:
+You can either run the [installer](https://github.com/stroebjo/digital-gr/releases/latest) (Windows) or run it form source:
 
 - Python 2
 - [wxPython](https://wxpython.org/index.php)
